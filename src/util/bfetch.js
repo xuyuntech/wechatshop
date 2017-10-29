@@ -1,6 +1,8 @@
 /**
  * @author cabernety
  */
+
+/* eslint-disable */
 import 'isomorphic-fetch';
 import Cookies from 'universal-cookie';
 import { isString, isFunction } from 'lodash';

@@ -3,7 +3,7 @@ import Layout from 'components/Layout';
 import Loadable from 'util/Loadable';
 
 const LoadableComponent = Loadable(
-  import(/* webpackChunkName: 'home' */ './Home'),
+  import(/* webpackChunkName: 'mine' */ './Mine'),
 );
 
 export default class extends React.Component {
