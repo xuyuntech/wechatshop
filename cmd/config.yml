@@ -1,0 +1,9 @@
+server:
+  addr: ":8080"
+  debug: true
+db:
+  host: "127.0.0.1"
+  port: 3306
+  user: "root"
+  name: "wechatshop"
+  password: "123456"
