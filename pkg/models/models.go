@@ -7,6 +7,7 @@ import (
 	"strings"
 	"github.com/Sirupsen/logrus"
 	"github.com/go-xorm/core"
+	_ "github.com/go-sql-driver/mysql"
 	"github.com/robfig/cron"
 )
 
@@ -55,7 +56,7 @@ func Tables() []interface{} {
 }
 
 func ping(engine *xorm.Engine){
-	logrus.Debugf("start to pint db engine.")
+	logrus.Debugf("start to ping db engine.")
 	forever := make(chan bool)
 	c := cron.New()
 	c.AddFunc("@every 1m", func(){

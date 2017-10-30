@@ -28,3 +28,15 @@ $ npm run build
 cmd/main.go 是入口
 
 具体模块说明请看 pkg 目录的 readme
+
+运行前请安装 `docker`
+
+* 创建 mysql 本地 docker 容器
+```
+$ make db
+```
+* 然后在 cmd 目录下执行 go run
+```
+$ cd cmd
+$ go run main.go
+```
