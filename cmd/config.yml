@@ -1,6 +1,11 @@
 server:
   addr: ":8080"
   debug: true
+auth:
+# -- 下面两项应该是 usercenter 的配置，先放在这里
+#  tokenKey: "atokenkey"
+#  passwordSalt: "apasswordsalt"
+  tokenAuthUrl: "https://token-auth-url"
 db:
   host: "127.0.0.1"
   port: 3306

@@ -11,6 +11,11 @@ type Config struct {
 		Addr string `yaml:"addr,omitempty"`
 		Debug bool `yaml:"debug"`
 	}    `yaml:"server,omitempty"`
+	Auth struct {
+		TokenKey string `yaml:"tokenKey,omitempty"`
+		PasswordSalt string `yaml:"passwordSalt,omitempty"`
+		TokenAuthURL string `yaml:"tokenAuthUrl,omitempty"`
+	} `yaml:"auth,omitempty"`
 	DB struct{
 		Host string `yaml:"host,omitempty"`
 		Port int `yaml:"port,omitempty"`
