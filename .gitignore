@@ -29,5 +29,5 @@ yarn-error.log*
 # Misc
 .DS_Store
 .eslintcache
-
+package-lock.json
 db_data
